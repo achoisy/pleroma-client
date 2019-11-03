@@ -57,7 +57,7 @@ class ExampleScreen extends React.Component {
                 </Text>
               </View>
             )}
-            <Button onPress={() => this._fetchUser()}>Refresh1</Button>
+            <Button onPress={() => this._fetchUser()} text="Refresh1" />
           </View>
         )}
       </View>
