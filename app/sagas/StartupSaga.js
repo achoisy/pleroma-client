@@ -1,4 +1,4 @@
-import {put} from 'redux-saga/effects';
+import { put } from 'redux-saga/effects';
 import ExampleActions from '../stores/example/Actions';
 import NavigationService from '../services/NavigationService';
 

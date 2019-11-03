@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Dimensions, Image} from 'react-native';
+import { View, Dimensions, Image } from 'react-native';
 import {
   Drawer,
   DrawerItem,
@@ -59,7 +59,7 @@ const DrawerContent = () => {
   );
 };
 
-export default function DrawerPage({drawerIsOpen, children, drawerToggle}) {
+export default function DrawerPage({ drawerIsOpen, children, drawerToggle }) {
   const screenWidth = Dimensions.get('window').width;
   const drawerWidth = screenWidth <= 450 ? screenWidth - 56 : 350;
 

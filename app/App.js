@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
-import {BreadProvider} from 'material-bread';
-import {Provider} from 'react-redux';
-import {PersistGate} from 'redux-persist/lib/integration/react';
+import React, { Component } from 'react';
+import { BreadProvider } from 'material-bread';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/lib/integration/react';
 import createStore from './stores';
 import RootScreen from './containers/root/RootScreen';
 import SplashScreen from './containers/splashScreen/SplashScreen';
-import {LightTheme} from './theme';
-import {enableScreens} from 'react-native-screens';
+import { LightTheme } from './theme';
+import { enableScreens } from 'react-native-screens';
 
 enableScreens();
-const {store, persistor} = createStore();
+const { store, persistor } = createStore();
 
 export default class App extends Component {
   render() {

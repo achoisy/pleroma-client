@@ -1,5 +1,5 @@
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from '../containers/home/HomeScreen';
 import SplashScreen from '../containers/splashScreen/SplashScreen';
 import ExampleScreen from '../containers/example/ExampleScreen';

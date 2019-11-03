@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import Colors from '../theme/Colors';
 
 export default StyleSheet.create({
@@ -119,13 +119,13 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
   },
   mirror: {
-    transform: [{scaleX: -1}],
+    transform: [{ scaleX: -1 }],
   },
   rotate90: {
-    transform: [{rotate: '90deg'}],
+    transform: [{ rotate: '90deg' }],
   },
   rotate90Inverse: {
-    transform: [{rotate: '-90deg'}],
+    transform: [{ rotate: '-90deg' }],
   },
   row: {
     flexDirection: 'row',

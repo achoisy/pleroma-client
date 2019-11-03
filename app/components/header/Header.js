@@ -1,12 +1,12 @@
 import React from 'react';
-import {View} from 'react-native';
-import {Appbar, IconButton} from 'material-bread';
+import { View } from 'react-native';
+import { Appbar, IconButton } from 'material-bread';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Style from './HeaderStyle';
 import ApplicationStyles from '../../theme/ApplicationStyles';
-import {Colors} from '../../theme/';
+import { Colors } from '../../theme/';
 
-export default function Header({drawerToggle}) {
+export default function Header({ drawerToggle }) {
   return (
     <View style={ApplicationStyles.header}>
       <Appbar

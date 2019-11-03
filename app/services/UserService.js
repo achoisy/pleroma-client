@@ -1,6 +1,6 @@
 import axios from 'axios';
-import {Config} from '../config';
-import {is, curryN, gte} from 'ramda';
+import { Config } from '../config';
+import { is, curryN, gte } from 'ramda';
 
 const isWithin = curryN(3, (min, max, value) => {
   const isNumber = is(Number);

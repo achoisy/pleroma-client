@@ -6,4 +6,12 @@ import ApplicationStyles from './ApplicationStyles';
 import Helpers from './Helpers';
 import LightTheme from './defaultTheme';
 
-export {Colors, Fonts, Images, Metrics, ApplicationStyles, Helpers, LightTheme};
+export {
+  Colors,
+  Fonts,
+  Images,
+  Metrics,
+  ApplicationStyles,
+  Helpers,
+  LightTheme,
+};

@@ -1,4 +1,4 @@
-import {createActions} from 'reduxsauce';
+import { createActions } from 'reduxsauce';
 
 /**
  * We use reduxsauce's `createActions()` helper to easily create redux actions.
@@ -18,7 +18,7 @@ import {createActions} from 'reduxsauce';
  *
  * @see https://github.com/infinitered/reduxsauce#createactions
  */
-const {Types, Creators} = createActions({
+const { Types, Creators } = createActions({
   // Fetch user informations
   drawerToggle: null,
 });

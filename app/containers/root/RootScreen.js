@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import NavigationService from '../../services/NavigationService';
 import AppNavigator from '../../navigators/AppNavigator';
-import {View, StatusBar} from 'react-native';
+import { View, StatusBar } from 'react-native';
 import styles from './RootScreenStyle';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import StartupActions from '../../stores/startup/Actions';
-import {PropTypes} from 'prop-types';
+import { PropTypes } from 'prop-types';
 
 class RootScreen extends Component {
   componentDidMount() {
@@ -16,7 +16,7 @@ class RootScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor="white" barStyle="dark-content"/>
+        <StatusBar backgroundColor="white" barStyle="dark-content" />
         <AppNavigator
           // Initialize the NavigationService (see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html)
           ref={navigatorRef => {

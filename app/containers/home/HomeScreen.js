@@ -1,11 +1,10 @@
 import React from 'react';
-import {View, SafeAreaView, Dimensions} from 'react-native';
-import {Heading, BodyText} from 'material-bread';
-import {connect} from 'react-redux';
-import {PropTypes} from 'prop-types';
+import { View, SafeAreaView } from 'react-native';
+import { Heading, BodyText } from 'material-bread';
+import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import ApplicationStyles from '../../theme/ApplicationStyles';
 import HomeActions from '../../stores/home/Actions';
-import Style from './HomeStyle';
 import Drawer from '../../components/drawer/Drawer';
 import Header from '../../components/header/Header';
 
@@ -24,7 +23,7 @@ const PageContent = () => {
 class HomeScreen extends React.Component {
   render() {
     return (
-      <SafeAreaView style={Style.container}>
+      <SafeAreaView style={ApplicationStyles.screen.container}>
         <Drawer {...this.props}>
           <View style={ApplicationStyles.body}>
             <Header {...this.props} />

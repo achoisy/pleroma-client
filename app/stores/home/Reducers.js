@@ -3,9 +3,9 @@
  *
  * @see https://redux.js.org/basics/reducers
  */
-import {createReducer} from 'reduxsauce';
-import {INITIAL_STATE} from './InitialState';
-import {HomeTypes} from './Actions';
+import { createReducer } from 'reduxsauce';
+import { INITIAL_STATE } from './InitialState';
+import { HomeTypes } from './Actions';
 
 export const drawerToggle = state => ({
   ...state,

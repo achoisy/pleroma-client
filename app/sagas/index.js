@@ -1,8 +1,8 @@
-import {takeLatest, all} from 'redux-saga/effects';
-import {ExampleTypes} from '../stores/example/Actions';
-import {StartupTypes} from '../stores/startup/Actions';
-import {fetchUser} from './ExampleSaga';
-import {startup} from './StartupSaga';
+import { takeLatest, all } from 'redux-saga/effects';
+import { ExampleTypes } from '../stores/example/Actions';
+import { StartupTypes } from '../stores/startup/Actions';
+import { fetchUser } from './ExampleSaga';
+import { startup } from './StartupSaga';
 
 export default function* root() {
   yield all([
