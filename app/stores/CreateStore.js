@@ -1,6 +1,7 @@
 import { applyMiddleware, compose, createStore } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { persistReducer, persistStore } from 'redux-persist';
+// import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import AsyncStorage from '@react-native-community/async-storage';
 
 /**
@@ -17,11 +18,13 @@ import AsyncStorage from '@react-native-community/async-storage';
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
+  // stateReconciler: autoMergeLevel2,
   /**
    * Blacklist state that we do not need/want to persist
    */
   blacklist: [
     // 'auth',
+    'userInterface',
   ],
 };
 

@@ -5,16 +5,22 @@
  */
 import { createReducer } from 'reduxsauce';
 import { INITIAL_STATE } from './InitialState';
-import { HomeTypes } from './Actions';
+import { UserInterfaceTypes } from './Actions';
 
 export const drawerToggle = (state, { drawerState }) => ({
   ...state,
   drawerIsOpen: drawerState,
 });
 
+export const setActiveDrawerItem = (state, { itemKey }) => ({
+  ...state,
+  activeDrawerItem: itemKey,
+});
+
 /**
  * @see https://github.com/infinitered/reduxsauce#createreducer
  */
 export const reducer = createReducer(INITIAL_STATE, {
-  [HomeTypes.DRAWER_TOGGLE]: drawerToggle,
+  [UserInterfaceTypes.DRAWER_TOGGLE]: drawerToggle,
+  [UserInterfaceTypes.SET_ACTIVE_DRAWER_ITEM]: setActiveDrawerItem,
 });

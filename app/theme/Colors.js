@@ -24,6 +24,9 @@ export default {
     dark: '#826221',
     light: '#DEBD7D',
   },
+  backgroundColor: {
+    main: '#ffffff',
+  },
   success: '#28a745',
   error: '#dc3545',
 };

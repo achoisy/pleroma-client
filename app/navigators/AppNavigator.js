@@ -3,6 +3,12 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from '../containers/home/HomeScreen';
 import SplashScreen from '../containers/splashScreen/SplashScreen';
 import ExampleScreen from '../containers/example/ExampleScreen';
+import FavorisScreen from '../containers/favoris/FavorisScreen';
+import SuivisScreen from '../containers/suivis/SuivisScreen';
+import ParametresScreen from '../containers/parametres/ParametresScreen';
+import RechercheScreen from '../containers/recherche/RechercheScreen';
+import AideScreen from '../containers/aide/AideScreen';
+import QrScanScreen from '../containers/qrScan/QrScanScreen';
 
 /**
  * The root screen contains the application's navigation.
@@ -18,6 +24,12 @@ const StackNavigator = createStackNavigator(
     // own screen and remove the example.
     MainScreen: HomeScreen,
     // MainScreen: ExampleScreen,
+    FavorisScreen,
+    SuivisScreen,
+    ParametresScreen,
+    RechercheScreen,
+    AideScreen,
+    QrScanScreen,
   },
   {
     // By default the application will show the splash screen

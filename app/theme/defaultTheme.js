@@ -24,7 +24,7 @@ export default {
     hint: 'rgba(0, 0, 0, 0.38)',
   },
   text: {
-    fontFamily: 'Work Sans',
+    fontFamily: 'WorkSans-regular',
   },
   background: {
     default: '#fafafa',
@@ -68,7 +68,7 @@ export default {
   },
   drawerHeaderTitle: {
     color: 'white',
-    fontFamily: 'Work Sans',
+    fontFamily: 'WorkSans-SemiBold',
     fontWeight: '600',
     fontSize: 30,
     lineHeight: 35,
@@ -78,7 +78,7 @@ export default {
   drawerHeaderSubtitle: {
     marginTop: 4,
     color: Colors.primaryColor.light,
-    fontFamily: 'Work Sans',
+    fontFamily: 'WorkSans-Regular',
     fontStyle: 'normal',
     fontWeight: 'normal',
     fontSize: 14,
@@ -98,10 +98,10 @@ export default {
     color: Colors.secondaryColor.main,
   },
   drawerItemText: {
-    fontFamily: 'Work Sans',
+    fontFamily: 'WorkSans-Regular',
     fontSize: 18,
     color: Colors.primaryColor.light,
-    fontWeight: '500',
+    fontWeight: 'normal',
     zIndex: 10,
   },
   drawerItemIcon: {
@@ -178,6 +178,30 @@ export default {
     lineHeight: 10,
     letterSpacing: 1.5,
     textTransform: 'uppercase',
+  },
+  searchBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    backgroundColor: 'rgba(255,255,255,1)',
+    height: 56,
+    paddingHorizontal: 0,
+  },
+  searchBarNavigationIcon: {
+    color: 'black',
+    size: 24,
+  },
+  searchBarcloseIcon: {
+    color: 'black',
+    size: 24,
+  },
+  searchInput: {
+    fontFamily: 'WorkSans-Medium',
+    fontSize: 16,
+    fontWeight: '500',
+    flex: 1,
+    marginLeft: 8,
+    height: 48,
   },
   subtitleOne: {
     fontSize: 16,

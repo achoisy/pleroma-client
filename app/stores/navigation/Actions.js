@@ -21,7 +21,8 @@ import { createActions } from 'reduxsauce';
 const { Types, Creators } = createActions({
   // Fetch user informations
   drawerToggle: ['drawerState'],
+  setActiveDrawerItem: ['itemKey'],
 });
 
-export const HomeTypes = Types;
+export const UserInterfaceTypes = Types;
 export default Creators;

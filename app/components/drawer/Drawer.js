@@ -12,7 +12,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Style from './DrawerStyle';
 import ApplicationStyles from '../../theme/ApplicationStyles';
 
-const DrawerContent = () => {
+const DrawerContent = ({ navigation, activeDrawerItem }) => {
   return (
     <View style={ApplicationStyles.header}>
       <DrawerHeader
@@ -37,36 +37,73 @@ const DrawerContent = () => {
         <BodyText type={2}>28 telex, 5 favoris, 5 suivis</BodyText>
       </View>
       <DrawerSection bottomDivider>
-        <DrawerItem text={'Actualités'} icon={'home'} active />
-        <DrawerItem text={'Favoris'} icon={'star'} />
+        <DrawerItem
+          text={'Actualités'}
+          icon={'home'}
+          onPress={() => navigation('MainScreen')}
+          active={activeDrawerItem === 1}
+        />
+        <DrawerItem
+          text={'Favoris'}
+          icon={'star'}
+          onPress={() => navigation('FavorisScreen')}
+          active={activeDrawerItem === 2}
+        />
         <DrawerItem
           text={'Suivis'}
           icon={'account-group'}
           iconComponent={MaterialCommunityIcons}
+          onPress={() => navigation('SuivisScreen')}
+          active={activeDrawerItem === 3}
         />
-        <DrawerItem text={'Recherche'} icon={'search'} />
+        <DrawerItem
+          text={'Recherche'}
+          icon={'search'}
+          onPress={() => navigation('RechercheScreen')}
+          active={activeDrawerItem === 4}
+        />
         <DrawerItem
           text={'Lecteur QRCode'}
           icon={'qrcode-scan'}
           iconComponent={MaterialCommunityIcons}
+          onPress={() => navigation('QrScanScreen')}
+          active={activeDrawerItem === 5}
         />
       </DrawerSection>
       <DrawerSection bottomDivider>
-        <DrawerItem text={'Paramètres et confidentialité'} />
-        <DrawerItem text={'Centre d’assistance'} />
+        <DrawerItem
+          text={'Paramètres et confidentialité'}
+          onPress={() => navigation('ParametresScreen')}
+          active={activeDrawerItem === 6}
+        />
+        <DrawerItem
+          text={'Centre d’assistance'}
+          onPress={() => navigation('AideScreen')}
+          active={activeDrawerItem === 7}
+        />
       </DrawerSection>
     </View>
   );
 };
 
-export default function DrawerPage({ drawerIsOpen, children, drawerToggle }) {
+export default function DrawerPage({
+  drawerIsOpen,
+  children,
+  drawerToggle,
+  navToScreen,
+  activeDrawerItem,
+}) {
   const screenWidth = Dimensions.get('window').width;
   const drawerWidth = screenWidth <= 450 ? screenWidth - 56 : 350;
-
   return (
     <Drawer
       open={drawerIsOpen}
-      drawerContent={<DrawerContent />}
+      drawerContent={
+        <DrawerContent
+          navigation={navToScreen}
+          activeDrawerItem={activeDrawerItem}
+        />
+      }
       onClose={() => drawerToggle()}
       animationTime={250}
       width={drawerWidth}>

@@ -6,9 +6,7 @@ import createStore from './stores';
 import RootScreen from './containers/root/RootScreen';
 import SplashScreen from './containers/splashScreen/SplashScreen';
 import { LightTheme } from './theme';
-import { enableScreens } from 'react-native-screens';
 
-enableScreens();
 const { store, persistor } = createStore();
 
 export default class App extends Component {

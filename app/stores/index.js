@@ -3,6 +3,7 @@ import configureStore from './CreateStore';
 import rootSaga from '../sagas/';
 import { reducer as ExampleReducer } from './example/Reducers';
 import { reducer as HomeReducer } from './home/Reducers';
+import { reducer as UserInterfaceReducer } from './navigation/Reducers';
 
 export default () => {
   const rootReducer = combineReducers({
@@ -12,6 +13,7 @@ export default () => {
      */
     example: ExampleReducer,
     home: HomeReducer,
+    userInterface: UserInterfaceReducer,
   });
 
   return configureStore(rootReducer, rootSaga);

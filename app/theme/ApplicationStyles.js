@@ -20,4 +20,14 @@ export default {
     backgroundColor: Colors.primaryUltraLight,
     height: '100%',
   },
+  appbar: {
+    backgroundColor: Colors.backgroundColor.main,
+    title: {
+      color: Colors.primaryColor.main,
+      fontFamily: 'WorkSans-Medium',
+      fontStyle: 'normal',
+      fontWeight: '500',
+      fontSize: 20,
+    },
+  },
 };
