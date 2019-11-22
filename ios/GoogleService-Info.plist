@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>489370757654-iqrcirlg658r5i9oiv7dntacch4rko9i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.489370757654-iqrcirlg658r5i9oiv7dntacch4rko9i</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>489370757654-5rik5884e4c19v5foc3thua14nib1ifk.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUekgF32elOvBj6p2FZMH2Satu6untauM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>489370757654</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lecoqsocial.client</string>
+	<key>PROJECT_ID</key>
+	<string>lecoqsocial</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lecoqsocial.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:489370757654:ios:27e38f12ffd32fe64b2337</string>
+	<key>DATABASE_URL</key>
+	<string>https://lecoqsocial.firebaseio.com</string>
+</dict>
+</plist>

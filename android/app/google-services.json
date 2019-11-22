@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "489370757654",
+    "firebase_url": "https://lecoqsocial.firebaseio.com",
+    "project_id": "lecoqsocial",
+    "storage_bucket": "lecoqsocial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489370757654:android:9faba87866e3a8e84b2337",
+        "android_client_info": {
+          "package_name": "com.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489370757654-5rik5884e4c19v5foc3thua14nib1ifk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.client",
+            "certificate_hash": "571336437a538adb1a5e26ce8a0c799b96422304"
+          }
+        },
+        {
+          "client_id": "489370757654-japnoc7nhj89j5l1h1ei6pb7eehiv0h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHrQEC72Rm6McDqu1LInSfCiii1PmvKeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489370757654-japnoc7nhj89j5l1h1ei6pb7eehiv0h7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
