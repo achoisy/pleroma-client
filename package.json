@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",
     "@react-native-firebase/app": "^6.0.4",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "material-bread": "../material-bread-v2.4.4.tgz",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
